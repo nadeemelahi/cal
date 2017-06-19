@@ -1,4 +1,4 @@
-/* copyright Nadeem Elahi 2017 nadeem.elahi@gmail.com */
+/* author Nadeem Elahi 2017 nadeem.elahi@gmail.com */
 "use strict";
 function dce(tag){
    return document.createElement(tag);
