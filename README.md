@@ -24,6 +24,11 @@ read the calendar pick date as inputdate property
 
 var pickedDate = mycall.inputdate;
 
+#demos
+
+webscrips.biz/stuff/cal2/
+webscripts.biz/stuff/calpick
+
 
 
 
