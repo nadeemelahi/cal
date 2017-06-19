@@ -26,7 +26,7 @@ var pickedDate = mycall.inputdate;
 
 #demos
 
-[calendar](http://webscrips.biz/stuff/cal2/)
+[calendar](http://webscripts.biz/stuff/cal2/)
 
 [cal date picker](http://webscripts.biz/stuff/calpick)
 
