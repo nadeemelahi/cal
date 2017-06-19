@@ -1,0 +1,189 @@
+html,body,div,ul,li,p,h1,h2,h3,h4,button,img,input,canvas,time,section,header,main,nav {
+   margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline;
+   -webkit-box-sizing:border-box;
+   -moz-box-sizing:border-box;
+   -o-box-sizing:border-box;
+   box-sizing:border-box;
+   display: block;
+}
+body {
+   line-height: 1; 
+   font-family: "Times New Roman", Times, serif;
+}
+a { 
+   text-decoration: none; 
+}
+/* author Nadeem Elahi 2017 nadeem.elahi@gmail.com */
+h1 { 
+   text-align: center;
+   margin: 0.1em auto;
+}
+#container {
+   width: 100%;
+   padding: 0.5%;
+}
+@font-face {
+    font-family: 'oswald_regularregular';
+    src: url('fonts/oswald/oswald-regular-webfont.woff2') format('woff2'),
+         url('fonts/oswald/oswald-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+#cal { 
+   width: 100%;
+   margin: auto;
+   overflow: hidden; /* float containment */
+
+
+   font-variant: normal;
+   font-style: normal;
+   font-family: "Helvetica", "Arial", sans-serif;
+
+   background: #A6001A;
+
+   padding-bottom: 10px;
+   border: 2px solid #FFAB00;
+
+   border-radius: 5px;
+}
+#cal > nav {
+   width: 100%;
+   overflow: hidden;
+}
+#cal > nav > div {
+   float: left; 
+   padding-top: 3%;
+}
+#cal > nav > div:first-child {
+   width: 50%; 
+   padding-left: 3%;
+}
+#cal > nav > div:nth-child(2) {
+   width: 50%;
+   padding-right: 3%;
+   float: right;
+   text-align: right;
+}
+#cal > nav > div:last-child {
+   width: 100%; 
+}
+#cal > nav > div > button {
+   display: inline;
+   padding: 1%;
+   border-radius: 5%;
+   width: 30px;
+
+   color: white;
+
+   background: #00477E; 
+   background: -webkit-linear-gradient(#00477E, #003158); /* For Safari 5.1 to 6.0 */
+   background: -o-linear-gradient(#00477E, #003158); /* For Opera 11.1 to 12.0 */
+   background: -moz-linear-gradient(#00477E, #003158); /* For Firefox 3.6 to 15 */
+   background: linear-gradient(#00477E, #003158); /* Standard syntax */
+
+   border-radius: 5px;
+
+   -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
+   -moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
+   box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
+}
+#cal > nav > div:first-child > button {
+}
+#cal > nav > div > label {
+   margin: 0 5%;
+   color: white;
+}
+#cal > nav > div > input {
+   background: green; 
+   text-align: center;
+   margin: auto;
+   width: 100%;
+
+   color: white;
+
+   background: #00477E; 
+   background: -webkit-linear-gradient(#00477E, #003158); /* For Safari 5.1 to 6.0 */
+   background: -o-linear-gradient(#00477E, #003158); /* For Opera 11.1 to 12.0 */
+   background: -moz-linear-gradient(#00477E, #003158); /* For Firefox 3.6 to 15 */
+   background: linear-gradient(#00477E, #003158); /* Standard syntax */
+
+   padding: 3% 0;
+
+   -webkit-box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.75);
+   -moz-box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.75);
+   box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.75);
+}
+#cal > header {
+   font-weight: bold;
+   font-family: monospace;
+   color:  #A6001A; 
+}
+#cal > header > label {
+   float: left;
+   width: 13.285714%; /* 93/7= 13.285714 */
+   padding: 10px 0 10px 1%; /* 7% total */
+
+   background: #FFAB00;
+   margin-bottom: 1%;
+}
+#cal > section {
+}
+#cal > section > time {
+   background: #00477E; 
+   background: -webkit-linear-gradient(#00477E, #003158); /* For Safari 5.1 to 6.0 */
+   background: -o-linear-gradient(#00477E, #003158); /* For Opera 11.1 to 12.0 */
+   background: -moz-linear-gradient(#00477E, #003158); /* For Firefox 3.6 to 15 */
+   background: linear-gradient(#00477E, #003158); /* Standard syntax */
+
+   float: left;
+   height: 35px;
+
+   /* 100/7=14.285714%, 14.2x7=99.4, 0.6/6= 0.266666 */
+   /* 100/7=14.285714%, 14x7=98, 2/6= 0.33333 */
+   width: 14%;
+   margin-right: 0.33333%;
+
+   margin-bottom: 0.3%;
+
+   padding: 1%;
+   border-radius: 3px;
+
+   color: white;
+}
+
+#cal > section > time:nth-child(7n) {
+   margin-right: 0;
+}
+
+@media (min-width: 480px){
+   #cal { }
+
+   #cal > nav > div {
+      padding-bottom: 3%;
+   }
+   #cal > nav > div:nth-child(2) {
+      width: 32.5%;
+      padding-top: 4%;
+
+   }
+   #cal > nav > div:first-child {
+      width: 32.5%; 
+      padding-top: 4%;
+   }
+   #cal > nav > div:last-child {
+      width: 35%; 
+   }
+
+   #cal > nav > div > input {
+      border-radius: 5px;
+   }
+
+   #cal > section > time {
+      height: 50px;
+
+   }
+
+}
+
+
